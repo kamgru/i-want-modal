@@ -1,6 +1,8 @@
 # I want modal
 This is a simple javascript modal window. There are no dependencies (no jQuery).
 
+![I want modal](https://media.giphy.com/media/l49JJaOXJRJAkoaWc/giphy.gif)
+
 ## Usage
 Download [iw-modal.js](https://raw.githubusercontent.com/kamgru/i-want-modal/master/dist/js/iw-modal.js) and [iw-modal.css](https://raw.githubusercontent.com/kamgru/i-want-modal/master/dist/css/iw-modal.css) and include them in your html.
 
