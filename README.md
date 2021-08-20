@@ -34,3 +34,10 @@ Instantiate new modal object and pass it your modal id.
 var modal = new IWantModal('myModal');
 modal.show();
 ```
+
+## Build
+
+```
+npm install
+npm run build
+```
