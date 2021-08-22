@@ -1,5 +1,5 @@
 # I want modal
-This is a simple javascript modal window. There are no dependencies (no jQuery).
+This is a simple javascript modal window. There are no dependencies (no jQuery). MIT License.
 
 ![I want modal](https://media.giphy.com/media/l49JJaOXJRJAkoaWc/giphy.gif)
 
