@@ -40,10 +40,22 @@ Subscribe to click event to get notified about button clicks
 modal.onClick(evt => {
   console.log(evt.target)
 })
-
+```
 ## Build
 
+1. Make sure you have [Node.js](https://nodejs.org/) installed
+
+2. Clone the repository and navigate to the directory 
+```
+git clone https://github.com/kamgru/i-want-modal.git
+cd i-want-modal
+```
+
+3. Install dependencies
 ```
 npm install
+```
+4. Run the build script
+```
 npm run build
 ```
