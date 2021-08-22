@@ -17,6 +17,8 @@ var IWantModal = /*#__PURE__*/function () {
     this._setBackdropOnclick();
 
     this._setDismissButtonsOnclick();
+
+    this._buttons = document.querySelectorAll('#' + id + ' button');
   }
 
   _createClass(IWantModal, [{
@@ -39,6 +41,13 @@ var IWantModal = /*#__PURE__*/function () {
     key: "toggle",
     value: function toggle() {
       this._getDisplay() ? this.hide() : this.show();
+    }
+  }, {
+    key: "onClick",
+    value: function onClick(fn) {
+      this._buttons.forEach(function (x) {
+        x.addEventListener('click', fn);
+      });
     }
   }, {
     key: "onShow",

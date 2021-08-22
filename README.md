@@ -35,6 +35,12 @@ var modal = new IWantModal('myModal');
 modal.show();
 ```
 
+Subscribe to click event to get notified about button clicks
+```javascript
+modal.onClick(evt => {
+  console.log(evt.target)
+})
+
 ## Build
 
 ```

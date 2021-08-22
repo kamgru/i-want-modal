@@ -4,6 +4,7 @@ class IWantModal {
         this._setAnimations();
         this._setBackdropOnclick();
         this._setDismissButtonsOnclick();
+        this._buttons = document.querySelectorAll('#'+id+' button');
     }
 
     show() {
@@ -23,6 +24,12 @@ class IWantModal {
         this._getDisplay()
             ? this.hide()
             : this.show();
+    }
+
+    onClick(fn) {
+        this._buttons.forEach(x => {
+            x.addEventListener('click', fn);
+        })
     }
 
     onShow(fn) {

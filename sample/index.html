@@ -16,7 +16,7 @@
                     <p>Hi, I'm a modal.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="button">Ok</button>
+                    <button id="btn-ok" type="button" class="button">Ok</button>
                     <button type="button" class="button" data-dismiss>Cancel</button>
                 </div>
             </div>
@@ -33,6 +33,13 @@
                 modal.onHide(function(){
                     console.log('modal onHide()');
                 });
+
+                modal.onClick(function(evt){
+                    if (evt.target.id == 'btn-ok'){
+                        modal.hide();
+                        alert("OK!")
+                    }
+                })
 
                 var showModal = function() {
                     modal.show();
